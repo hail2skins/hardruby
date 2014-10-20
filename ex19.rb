@@ -8,6 +8,14 @@ end
 puts "We can just give the function numbers directly:"
 cheese_and_crackers(20, 30)
 
+puts "How about from user input?"
+print "How many boxes of cheese ya got? "
+input_cheese = $stdin.gets.chomp.to_i
+print "How about boxes of crackers? "
+input_crackers = $stdin.gets.chomp.to_i
+
+cheese_and_crackers(input_cheese, input_crackers)
+
 puts "OR, we can use variables from our script:"
 amount_of_cheese = 10
 amount_of_crackers = 50
